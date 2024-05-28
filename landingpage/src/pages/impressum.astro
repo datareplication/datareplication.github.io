@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+<Layout title="Datareplication.io">
+
+    <main>
+        <Header/>
+        <div class="body" >
+            <h1>Impressum</h1>
+            <div class="content">
+                <p>
+                    Angaben gemäß § 5 TMG: <br>
+                    <br>
+                    <strong>neuland – Büro für Informatik GmbH</strong><br>
+                    Konsul-Smidt-Str. 8g<br>
+                    D-28217 Bremen<br>
+                    <br>
+                    Vertreten durch:<br>
+                    Maike Conrads, Jens Himmelreich<br>
+                    <br>
+                    Kontakt:<br>
+                    Telefon: <a href="tel:+494213801070">(0421) 380 107-0</a><br>
+                    E-Mail: <a href="mailto:info@neuland-bfi.de">info@neuland-bfi.de</a><br>
+                    <br>
+                    Registereintrag:<br>
+                    Eintragung im Handelsregister.<br>
+                    Registergericht: Bremen<br>
+                    Registernummer: HRB 23395 HB<br>
+
+                    Umsatzsteuer-ID:<br>
+                    Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                    DE246585501<br>
+                    <br>
+                    Angaben zur Berufshaftpflichtversicherung:<br>
+                    Angaben zur Berufshaftpflichtversicherung können über unsere Kontaktwege erfragt werden.`<br>
+                </p>
+            </div>
+        </div>
+
+        <Footer/>
+    </main>
+</Layout>
+
+<style>
+    main {
+        width: 80%;
+        margin: auto;
+        //padding: 1rem;
+        color: black;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .body{
+        min-height: calc(100vh - 200px);
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+</style>
