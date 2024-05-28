@@ -1,0 +1,59 @@
+---
+import Logo from './logos/Logo.astro';
+import GitHubLogo from './logos/GitHubLogo.astro';
+---
+<div class="header">
+    <div class="content-box">
+        <a class="logo" href="/">
+            <Logo/>
+        </a>
+        <div class="content-right">
+            <a href="/spec">Spec</a>
+            <a href="/datareplication-java">Javadoc</a>
+            <a class="github-logo" href="https://github.com/datareplication" target="_blank">
+                <GitHubLogo/>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .header {
+        padding-top: 20px;
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content-box {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-right {
+        width: 220px;
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        justify-content: space-between;
+
+    }
+
+    a {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .logo {
+        height: 60px;
+        margin-left:20px ;
+    }
+
+    .github-logo {
+        display: inline-block;
+        height: 26px;
+        width: 26px;
+    }
+</style>

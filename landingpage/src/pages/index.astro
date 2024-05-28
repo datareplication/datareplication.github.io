@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import HeroElement from '../components/contentElements/HeroElement.astro'
+import TeaserElement from '../components/contentElements/TeaserElement.astro'
+import DescriptionElement from '../components/contentElements/DescriptionElement.astro'
+---
+
+<Layout title="Datareplication.io">
+    
+    <main>
+        <Header/>
+        <div class="body">
+            <HeroElement/>
+            <TeaserElement/>
+            <DescriptionElement/>
+        </div>
+        <Footer/>
+    </main>
+
+</Layout>
+
+<style>
+    main {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .body{
+        min-height: calc(100vh - 340px);
+    }
+</style>

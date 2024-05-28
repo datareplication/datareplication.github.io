@@ -1,0 +1,43 @@
+---
+import LearnMoreButton from '../buttons/LearnMoreButton.astro'
+---
+<div class="hero-element">
+    <h1>Datareplication.io</h1>
+    <div class="hero-element-text">
+        <p>What does this Product</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    </div>
+    <div class="hero-element-buttons">
+        <LearnMoreButton/>
+        <LearnMoreButton/>
+    </div>
+</div>
+
+<style>
+    .hero-element {
+        width: 80%;
+        min-height: 300px;
+        margin: 100px auto 30px;
+    }
+
+    .hero-element-text {
+        width: 80%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-element-buttons {
+        width: 80%;
+        margin: 10px auto auto;
+        display: flex;
+    }
+</style>
