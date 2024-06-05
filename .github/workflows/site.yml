@@ -20,14 +20,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Build site
-        run: |
-          mkdir -p target
-          cp *.html target/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: npm ci
+      - run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./target
+          path: ./dist
 
   deploy:
     environment:
