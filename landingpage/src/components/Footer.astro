@@ -1,0 +1,64 @@
+---
+import Logo from './logos/Logo.astro';
+---
+<div class="footer">
+    <div class="content-box">
+        <div class="content">
+            <div class="logo">
+            <Logo />
+            </div>
+            <div>
+                <p class="content-header">is a product of </p>
+                <p> neuland – Büro für Informatik GmbH <br>
+                    © 2024 neuland – Büro für Informatik GmbH
+                </p>
+                <a href="/impressum">Legal Notice</a>
+            </div>
+        </div>
+        <div class="content">
+            <p class="content-header">About neuland</p>
+            <p>As a specialist for invididual e-commerce solutions, we analyze your business processes, define goals,
+                find
+                ways and develop the software that makes retailers successful in e-commerce.</p>
+            <a href="https://www.neuland-bfi.de/">www.neuland-bfi.de</a>
+        </div>
+        <div class="content">
+            <p>
+                neuland – Büro für Informatik GmbH <br/>
+                Konsul-Smidt-Str. 8g (Speicher 1) <br/>
+                D-28217 Bremen <br/>
+                Tel: 04 21. 38 01 07 -0
+            </p>
+            <a href="mailto:info@neuland-bfi.de"> Mail adresse anpassen
+            </a>
+        </div>
+    </div>
+
+</div>
+<style>
+    .footer {
+        height: 250px;
+        background-color: #EEEBE2;
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        width: 33%;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .content-box {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-header {
+        color: #FF5A55 ;
+    }
+    .logo {
+        height: 80px;
+    }
+</style>
