@@ -1,17 +1,21 @@
 ---
-import LearnMoreButton from '../buttons/LearnMoreButton.astro'
+import Button from '../Button.astro'
 ---
 <div class="hero-element">
     <h1>Datareplication.io</h1>
     <div class="hero-element-text">
-        <p>What does this Product</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+        <p>This data format and its reference implementation enable the asynchronous replication of data between
+            multiple independent systems.
+            Built on top of HTTP and open web standards, it ensures high compatibility and ease of integration.
+            The system supports both near real-time replication and snapshot replication, providing flexibility to meet
+            various data synchronization needs.
+            With this solution, data can be efficiently and reliably exchanged between different platforms.
+            This opens up numerous possibilities for use in distributed and decentralized IT infrastructures.</p>
     </div>
     <div class="hero-element-buttons">
-        <LearnMoreButton/>
-        <LearnMoreButton/>
+        <Button href="/spec" text="Learn more"/>
+        <Button href="https://github.com/datareplication" text="Try out"/>
     </div>
 </div>
 

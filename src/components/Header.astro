@@ -1,6 +1,7 @@
 ---
 import Logo from './logos/Logo.astro';
 import GitHubLogo from './logos/GitHubLogo.astro';
+import Link from './Link.astro';
 ---
 <div class="header">
     <div class="content-box">
@@ -8,8 +9,8 @@ import GitHubLogo from './logos/GitHubLogo.astro';
             <Logo/>
         </a>
         <div class="content-right">
-            <a href="/spec">Spec</a>
-            <a href="/datareplication-java">Javadoc</a>
+            <Link href="/spec" text="Spec"/>
+            <Link href="/datareplication-java" text="Javadoc"/>
             <a class="github-logo" href="https://github.com/datareplication" target="_blank">
                 <GitHubLogo/>
             </a>

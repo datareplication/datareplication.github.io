@@ -1,5 +1,6 @@
 ---
 import Logo from './logos/Logo.astro';
+import Link from './Link.astro';
 ---
 <div class="footer">
     <div class="content-box">
@@ -12,7 +13,7 @@ import Logo from './logos/Logo.astro';
                 <p> neuland – Büro für Informatik GmbH <br>
                     © 2024 neuland – Büro für Informatik GmbH
                 </p>
-                <a href="/impressum">Legal Notice</a>
+                <Link href="/impressum" text="Legal Notice"/>
             </div>
         </div>
         <div class="content">
@@ -20,7 +21,7 @@ import Logo from './logos/Logo.astro';
             <p>As a specialist for invididual e-commerce solutions, we analyze your business processes, define goals,
                 find
                 ways and develop the software that makes retailers successful in e-commerce.</p>
-            <a href="https://www.neuland-bfi.de/">www.neuland-bfi.de</a>
+            <Link href="https://www.neuland-bfi.de/" text="www.neuland-bfi.de"/>
         </div>
         <div class="content">
             <p>
@@ -29,8 +30,7 @@ import Logo from './logos/Logo.astro';
                 D-28217 Bremen <br/>
                 Tel: 04 21. 38 01 07 -0
             </p>
-            <a href="mailto:info@neuland-bfi.de"> Mail adresse anpassen
-            </a>
+            <Link href="mailto:contact@datareplication.io" text="contact@datareplication.io"/>
         </div>
     </div>
 
