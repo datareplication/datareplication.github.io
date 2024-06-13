@@ -37,7 +37,7 @@ import Link from './Link.astro';
 </div>
 <style>
     .footer {
-        height: 250px;
+        min-height: 250px;
         background-color: #EEEBE2;
         display: flex;
         align-items: center;
@@ -47,6 +47,9 @@ import Link from './Link.astro';
         width: 33%;
         font-size: 20px;
         padding: 20px;
+        @media screen and (max-width: 599px) {
+            width: 100%;
+        }
     }
     .content-box {
         width: 80%;
@@ -54,6 +57,13 @@ import Link from './Link.astro';
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 599px) {
+            justify-content: normal;
+            width: 90%;
+            display: block;
+            align-items: normal;
+
+        }
     }
     .content-header {
         color: #FF5A55 ;

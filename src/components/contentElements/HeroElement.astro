@@ -24,24 +24,37 @@ import Button from '../Button.astro'
         width: 80%;
         min-height: 300px;
         margin: 100px auto 30px;
+        @media screen and (max-width: 599px) {
+            width: 90%;
+        }
     }
 
     .hero-element-text {
         width: 80%;
         margin: auto;
+        @media screen and (max-width: 599px) {
+            width: 100%;
+        }
     }
 
     h1 {
         font-size: 4rem;
         font-weight: 700;
-        line-height: 1;
+        line-height: 1.2;
         text-align: center;
         margin-bottom: 50px;
+        @media screen and (max-width: 599px) {
+            font-size: 3rem;
+        }
     }
 
     .hero-element-buttons {
         width: 80%;
         margin: 10px auto auto;
         display: flex;
+        @media screen and (max-width: 599px) {
+            justify-content: center;
+        }
     }
+
 </style>

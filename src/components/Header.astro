@@ -31,6 +31,9 @@ import Link from './Link.astro';
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 599px) {
+            width: 100%;
+        }
     }
 
     .content-right {
@@ -39,7 +42,6 @@ import Link from './Link.astro';
         align-items: center;
         margin-right: 30px;
         justify-content: space-between;
-
     }
 
     a {
