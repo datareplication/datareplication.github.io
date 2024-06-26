@@ -1,11 +1,11 @@
 ---
-
+import { Image } from "astro:assets"
+import myImage from "../../assets/feed-and-snapshot-explanation.png"
 ---
-<img src="feed-and-snapshot-explanation.png" alt="Feed and Snapshot Explanation" class="picture">
+<Image src={myImage} alt="Data replication using a feed with a snapshot entry point" class="picture" width="500" />
 <style>
 .picture {
     margin-left: 80px;
     float: right;
-    width: 40%;
 }
 </style>

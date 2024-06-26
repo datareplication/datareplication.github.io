@@ -8,6 +8,7 @@ import Link from './Link.astro';
         <a class="logo" href="/" title="to home">
             <Logo/>
         </a>
+        <h2>Datareplication.io</h2>
         <div class="content-right">
             <Link href="/spec" text="Spec" title="Spec"/>
             <Link href="/datareplication-java" text="Javadoc" title="Javadoc"/>
@@ -23,6 +24,10 @@ import Link from './Link.astro';
         min-height: 80px;
         display: flex;
         justify-content: space-between;
+        h2 {
+            font-size: 30px;
+            margin: 0;
+        }
     }
 
     .content-box {
