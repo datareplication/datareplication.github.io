@@ -1,7 +1,8 @@
 ---
-
+import { Image } from "astro:assets"
+import myImage from "../../assets/logo.png"
 ---
-<img src="logo.png" alt="Logo" class="st0"/>
+<Image src={myImage} alt="Logo" class="st0"/>
 
 <style>
     .st0 {
