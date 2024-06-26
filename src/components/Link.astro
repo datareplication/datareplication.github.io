@@ -2,10 +2,11 @@
 interface Props {
     href: string;
     text: string;
+    title: string;
 }
-const {href, text} = Astro.props
+const {href, text, title} = Astro.props
 ---
-<a href={href}>{text}</a>
+<a href={href} title={title}>{text}</a>
 <style>
     a {
         text-decoration: underline #FF5A55;
