@@ -4,36 +4,75 @@ import FeedOnlyGraphic from '../graphics/FeedOnlyGraphic.astro'
 import SnapshotOnlyGraphic from '../graphics/SnapshotOnlyGraphic.astro'
 ---
 <div class="description-element">
-    <h2>How it works</h2>
-    <ul>
-        <li>
-            <p>Create Data Exports</p>
-            Generate complete data exports using snapshots. Each snapshot captures a specific data point on a given date.
-        </li>
-        <li>
-            <SnapshotOnlyGraphic/>
-            <p>Schedule Periodic Updates</p>
-            Keep consumers up to date by scheduling regular snapshots. This ensures that your data remains up to date and accurate.
-        </li>
-        <li>
-            <p>Utilize Continuous Data Feeds</p>
-            Implement continuous data flows for a constant stream of updates. You can start consuming a feed from any available datetime.
-        </li>
-        <li>
-            <FeedAndSnapshotExplanationGraphic/>
-            <p>Combine Snapshots and Feeds</p>
-            Integrate snapshots with feeds for efficient data publishing and consumption between (micro)services.
-        </li>
-        <li>
-            <FeedOnlyGraphic/>
-            <p>Focus on Recent Changes</p>
-            For consumers only interested in the latest updates, a feed-only implementation can be used. This allows them to only receive the most recent changes without needing to care about historical data.
-        </li>
-    </ul>
+    <h2 class="description-header">How it works</h2>
+    <div class="content-elements">
+        <div class="content-element">
+            <div>
+                <h3>Create Data Exports</h3>
+                <p>Generate complete data exports using snapshots. Each snapshot captures a specific data point on a
+                    given
+                    date.</p>
+            </div>
+        </div>
+        <div class="content-element">
+            <div>
+                <h3>Schedule Periodic Updates</h3>
+                <p>Keep consumers up to date by scheduling regular snapshots. This ensures that your data remains up to
+                    date
+                    and accurate.</p>
+            </div>
+            <div>
+                <SnapshotOnlyGraphic/>
+            </div>
+        </div>
+        <div class="content-element">
+            <div>
+                <h3>Utilize Continuous Data Feeds</h3>
+                <p>Implement continuous data flows for a constant stream of updates. You can start consuming a feed from
+                    any
+                    available datetime.</p>
+            </div>
+        </div>
+        <div class="content-element">
+            <div>
+                <FeedAndSnapshotExplanationGraphic/>
+            </div>
+            <div>
+                <h3>Combine Snapshots and Feeds</h3>
+                <p>Integrate snapshots with feeds for efficient data publishing and consumption between
+                    (micro)services.</p>
+            </div>
+        </div>
+        <div class="content-element">
+            <div>
+                <h3>Focus on Recent Changes</h3>
+                <p>For consumers only interested in the latest updates, a feed-only implementation can be used. This
+                    allows
+                    them to only receive the most recent changes without needing to care about historical data.</p>
+            </div>
+            <div>
+                <FeedOnlyGraphic/>
+            </div>
+        </div>
+    </div>
 </div>
 <style>
     .description-element {
         width: calc(80% - 40px);
         margin: 100px auto 100px;
+    }
+
+    .content-elements {
+        width: 100%;
+    }
+
+    .content-element {
+        width: 80%;
+        display: flex;
+        margin: 20px 10%;
+        min-height: 220px;
+    }
+    .description-header {
+        margin-left: 10%;
     }
 </style>
